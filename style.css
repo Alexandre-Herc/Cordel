@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@700&family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --font1: 'Passion One', cursive;
+    --font2: 'Sriracha', cursive;
+    --font3: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header"
+                         "ct1 ct1 ct1 ct1"
+                         "ct2 ct2 ct2 ct2"
+                         "ct3 ct3 ct3 ct3"
+                         "ct4 ct4 ct4 ct4"
+                         "ct5 ct5 ct5 ct5"
+                         "footer footer footer footer";
+}
+
+#header {
+    grid-area: header;
+    background-color: black;
+}
+
+#header h1, p {
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--font1);
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+#header > p {
+    padding-bottom: 30px;
+}
+
+#header > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+#header a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+p {
+    margin: 15px;
+}
+
+article {
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+#ct1 {
+    background-color: white;
+    grid-area: ct1;
+}
+
+#ct1 > p {
+    color: black;
+
+    font-family: var(--font2);
+    font-size: 4.5vw;
+    text-align: left;
+}
+
+#ct2 {
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    grid-area: ct2;
+}
+
+#ct2 > article > p  {
+    font-family: var(--font2);
+    font-size: 4.5vw;
+    text-align: left;
+}
+
+#ct3 {
+    background-color: white;
+    grid-area: ct3;
+}
+
+#ct3> p {
+    color: black;
+    font-family: var(--font2);
+    font-size: 4.5vw;
+    text-align: left;
+}
+
+#ct4 {
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    grid-area: ct4;
+}
+
+#ct4 > article > p {
+    font-family: var(--font2);
+    font-size: 4.5vw;
+    text-align: left;
+}
+
+#ct5 {
+    background-color: white;
+    grid-area: ct5;
+}
+
+#ct5 > p {
+    color: black;
+    font-family: var(--font2);
+    font-size: 4.5vw;
+    text-align: left;
+}
+
+#footer {
+    background-color: black;
+    grid-area: footer;
+}
+
+#footer > p {
+    padding: 10px;
+    margin: 0px;
+}
+
+#footer > p > a {
+    color:white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
