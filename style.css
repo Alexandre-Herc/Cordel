@@ -65,8 +65,9 @@ p {
     margin: 15px;
 }
 
-article {
-    background-color: rgba(0, 0, 0, 0.541);
+article > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
 #ct1 {
@@ -84,8 +85,11 @@ article {
 
 #ct2 {
     background-image: url('imagens/background001.jpg');
+    background-position: center right;
     background-size: cover;
+    background-attachment: fixed;
     grid-area: ct2;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
 }
 
 #ct2 > article > p  {
@@ -109,6 +113,8 @@ article {
 #ct4 {
     background-image: url('imagens/background002.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
     grid-area: ct4;
 }
 
